@@ -1,4 +1,6 @@
 class people::enriqueruiz { # GitHub username
+
+    include people::enriqueruiz::applications
      
     #
     # Remove services we don't want
@@ -7,8 +9,9 @@ class people::enriqueruiz { # GitHub username
     #    ensure => "stopped",
     #}
    
-    service {"dev.dnsmasq":
-        ensure => "stopped",
-    }
+    #service {"dev.dnsmasq":
+    #    ensure => "stopped",
+    #}
  
 }
+
