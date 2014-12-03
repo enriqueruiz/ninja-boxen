@@ -9,9 +9,9 @@ class people::enriqueruiz { # GitHub username
     #    ensure => "stopped",
     #}
    
-    #service {"dev.dnsmasq":
-    #    ensure => "stopped",
-    #}
+    service {"dev.dnsmasq":
+        ensure => "stopped",
+    }
  
 }
 
