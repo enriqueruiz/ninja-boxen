@@ -1,6 +1,6 @@
 class people::enriqueruiz::applications {
   
-  #include iterm2::stable
+  include iterm2::stable
   #include dropbox
   #include mysql
   #include onepassword

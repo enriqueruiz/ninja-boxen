@@ -61,3 +61,4 @@ github "xquartz",     "1.2.1"
 # https://github.com/boxen.
 
 github "vagrant"
+github "iterm2"
