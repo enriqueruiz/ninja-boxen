@@ -8,6 +8,18 @@ class people::enriqueruiz::applications {
   include vagrant
   #include chrome
   #include vmware_fusion
+  
+  include bash::completion
 
+  #
+  # Remove services we don't want
+  #
+  #service {"dev.nginx":
+  #    ensure => "stopped",
+  #}
+
+  service {"dev.dnsmasq":
+      ensure => "stopped",
+  }
 }
 
