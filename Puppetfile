@@ -62,3 +62,4 @@ github "xquartz",     "1.2.1"
 
 github "vagrant"
 github "iterm2"
+github "bash"
