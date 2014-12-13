@@ -9,9 +9,19 @@ GITHUBTARBALL
     boxen (3.7.0)
 
 GITHUBTARBALL
+  remote: boxen/puppet-chrome
+  specs:
+    chrome (1.2.0)
+
+GITHUBTARBALL
   remote: boxen/puppet-dnsmasq
   specs:
     dnsmasq (2.0.1)
+
+GITHUBTARBALL
+  remote: boxen/puppet-firefox
+  specs:
+    firefox (1.2.3)
 
 GITHUBTARBALL
   remote: boxen/puppet-foreman
@@ -116,7 +126,9 @@ GITHUBTARBALL
 DEPENDENCIES
   bash (>= 0)
   boxen (= 3.7.0)
+  chrome (>= 0)
   dnsmasq (= 2.0.1)
+  firefox (>= 0)
   foreman (= 1.2.0)
   gcc (= 2.2.0)
   git (= 2.7.0)
