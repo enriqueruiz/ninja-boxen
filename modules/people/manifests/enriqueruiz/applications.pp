@@ -10,6 +10,8 @@ class people::enriqueruiz::applications {
   #include vmware_fusion
   
   include bash::completion
+  include chrome
+  include firefox
 
   #
   # Remove services we don't want
