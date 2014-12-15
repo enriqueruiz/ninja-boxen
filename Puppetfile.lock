@@ -99,6 +99,11 @@ GITHUBTARBALL
     sudo (1.0.0)
 
 GITHUBTARBALL
+  remote: boxen/puppet-textwrangler
+  specs:
+    textwrangler (1.0.6)
+
+GITHUBTARBALL
   remote: boxen/puppet-vagrant
   specs:
     vagrant (3.2.0)
@@ -147,6 +152,7 @@ DEPENDENCIES
   ruby (= 8.1.7)
   stdlib (= 4.2.1)
   sudo (= 1.0.0)
+  textwrangler (>= 0)
   vagrant (>= 0)
   xquartz (= 1.2.1)
 
