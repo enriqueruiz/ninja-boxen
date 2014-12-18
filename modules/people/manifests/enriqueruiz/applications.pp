@@ -12,7 +12,7 @@ class people::enriqueruiz::applications {
   include bash::completion
   include chrome
   include firefox
-  include textwrangler
+  #include textwrangler
 
   #
   # Remove services we don't want
