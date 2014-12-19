@@ -13,7 +13,7 @@ class people::enriqueruiz::applications {
   include chrome
   include firefox
   #include textwrangler
-  include parallels::v10  
+  include parallels  
 
   #
   # Remove services we don't want
