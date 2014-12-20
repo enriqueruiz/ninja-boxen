@@ -6,7 +6,6 @@ class people::enriqueruiz::applications {
   #include onepassword
   #include virtualbox
   include vagrant
-  #include chrome
   #include vmware_fusion
   
   include bash::completion
@@ -14,6 +13,7 @@ class people::enriqueruiz::applications {
   include firefox
   #include textwrangler
   include parallels  
+  include vmware_fusion
 
   #
   # Remove services we don't want
