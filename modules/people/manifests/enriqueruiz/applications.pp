@@ -11,7 +11,7 @@ class people::enriqueruiz::applications {
   include bash::completion
   include chrome
   include firefox
-  #include textwrangler
+  include textwrangler
   include parallels  
   include vmware_fusion
 
