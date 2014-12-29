@@ -1,7 +1,7 @@
 GITHUBTARBALL
   remote: boxen/puppet-bash
   specs:
-    bash (1.1.0)
+    bash (1.2.0)
 
 GITHUBTARBALL
   remote: boxen/puppet-boxen
@@ -106,7 +106,7 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-vagrant
   specs:
-    vagrant (3.2.0)
+    vagrant (3.2.1)
 
 GITHUBTARBALL
   remote: boxen/puppet-vmware_fusion
