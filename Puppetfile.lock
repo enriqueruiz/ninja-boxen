@@ -61,7 +61,7 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-iterm2
   specs:
-    iterm2 (1.2.2)
+    iterm2 (1.2.4)
 
 GITHUBTARBALL
   remote: boxen/puppet-nginx
