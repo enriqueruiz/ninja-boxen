@@ -14,16 +14,25 @@ class people::enriqueruiz::applications {
   include textwrangler
   include parallels  
   include vmware_fusion
+  
+  # install any arbitrary nodejs version
+  nodejs::version { 'v0.12.0': }
 
-  #
-  # Remove services we don't want
-  #
-  #service {"dev.nginx":
-  #    ensure => "stopped",
-  #}
+  # set the global nodejs version
+  class { 'nodejs::global': version => 'v0.12.0' }
 
-  service {"dev.dnsmasq":
-      ensure => "stopped",
+  # install some npm modules
+  nodejs::module { 'grunt-cli':
+  node_version => 'v0.12.0'
   }
+
+  nodejs::module { 'bower':
+  node_version => 'v0.12.0'
+  }
+
+  nodejs::module { 'yo':
+  node_version => 'v0.12.0'
+  }
+  
 }
 
