@@ -16,23 +16,23 @@ class people::enriqueruiz::applications {
   include vmware_fusion
   
   # install any arbitrary nodejs version
-  nodejs::version { 'v0.12.0': }
+  #nodejs::version { 'v0.12.0': }
 
   # set the global nodejs version
-  class { 'nodejs::global': version => 'v0.12.0' }
+  #class { 'nodejs::global': version => 'v0.12.0' }
 
   # install some npm modules
-  nodejs::module { 'grunt-cli':
-  node_version => 'v0.12.0'
-  }
+  #nodejs::module { 'grunt-cli':
+  #node_version => 'v0.12.0'
+  #}
 
-  nodejs::module { 'bower':
-  node_version => 'v0.12.0'
-  }
+  #nodejs::module { 'bower':
+  #node_version => 'v0.12.0'
+  #}
 
-  nodejs::module { 'yo':
-  node_version => 'v0.12.0'
-  }
+  #nodejs::module { 'yo':
+  #node_version => 'v0.12.0'
+  #}
   
 }
 
