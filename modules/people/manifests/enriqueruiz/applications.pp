@@ -14,12 +14,15 @@ class people::enriqueruiz::applications {
   include textwrangler
   include parallels  
   include vmware_fusion
-  
+  include github_for_mac
+
   # install any arbitrary nodejs version
   #nodejs::version { 'v0.12.0': }
 
   # set the global nodejs version
-  #class { 'nodejs::global': version => 'v0.12.0' }
+  #class { 'nodejs::global':
+  #version => 'v0.10.0'
+  #}
 
   # install some npm modules
   #nodejs::module { 'grunt-cli':
