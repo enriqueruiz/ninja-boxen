@@ -14,7 +14,7 @@ class people::enriqueruiz::applications {
   include textwrangler
   include parallels  
   include vmware_fusion
-  include github_for_mac
+  #include github_for_mac
 
   # install any arbitrary nodejs version
   #nodejs::version { 'v0.12.0': }
