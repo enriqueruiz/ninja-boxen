@@ -15,6 +15,30 @@ class people::enriqueruiz::applications {
   include parallels  
   include vmware_fusion
   include github_for_mac
+  
+  # Install the default version of both the JDK and JRE
+  include java
+  
+  # Eclipse for Java Developers
+  include eclipse::java
+
+  #class { 'eclipse::java':
+  #  version => 'SR2'
+  #}
+
+  # Eclipse for JEE Developers
+  #include eclipse::jee
+
+  #class { 'eclipse::jee':
+  #  version => 'SR2'
+  #}
+
+  # Eclipse for Grails Developers
+  include eclipse::ggts
+
+  # Eclipse for C++ Developers
+  #include eclipse::cpp  
+
 
   # install any arbitrary nodejs version
   #nodejs::version { 'v0.12.0': }
