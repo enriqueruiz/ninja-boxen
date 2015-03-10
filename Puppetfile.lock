@@ -24,6 +24,11 @@ GITHUBTARBALL
     dnsmasq (2.0.1)
 
 GITHUBTARBALL
+  remote: boxen/puppet-eclipse
+  specs:
+    eclipse (2.5.0)
+
+GITHUBTARBALL
   remote: boxen/puppet-firefox
   specs:
     firefox (1.2.3)
@@ -67,6 +72,11 @@ GITHUBTARBALL
   remote: boxen/puppet-iterm2
   specs:
     iterm2 (1.2.4)
+
+GITHUBTARBALL
+  remote: boxen/puppet-java
+  specs:
+    java (1.8.0)
 
 GITHUBTARBALL
   remote: boxen/puppet-nginx
@@ -154,6 +164,7 @@ DEPENDENCIES
   brewcask (= 0.0.6)
   chrome (>= 0)
   dnsmasq (= 2.0.1)
+  eclipse (>= 0)
   firefox (>= 0)
   foreman (= 1.2.0)
   gcc (= 2.2.0)
@@ -164,6 +175,7 @@ DEPENDENCIES
   hub (= 1.4.0)
   inifile (= 1.1.1)
   iterm2 (>= 0)
+  java (>= 0)
   module_data (= 0.0.3)
   nginx (= 1.4.4)
   nodejs (= 4.0.0)
