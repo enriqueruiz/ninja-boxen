@@ -76,7 +76,7 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-java
   specs:
-    java (1.8.0)
+    java (1.8.2)
 
 GITHUBTARBALL
   remote: boxen/puppet-nginx
@@ -131,7 +131,7 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-vagrant
   specs:
-    vagrant (3.2.2)
+    vagrant (3.3.0)
 
 GITHUBTARBALL
   remote: boxen/puppet-vmware_fusion
@@ -159,6 +159,7 @@ GITHUBTARBALL
     module_data (0.0.3)
 
 DEPENDENCIES
+  bash (>= 0)
   boxen (= 3.10.4)
   brewcask (= 0.0.6)
   chrome (>= 0)
@@ -168,6 +169,7 @@ DEPENDENCIES
   foreman (= 1.2.0)
   gcc (= 2.2.1)
   git (= 2.7.9)
+  github_for_mac (>= 0)
   go (= 2.1.0)
   homebrew (= 1.12.0)
   hub (= 1.4.1)
@@ -178,9 +180,8 @@ DEPENDENCIES
   nginx (= 1.4.5)
   nodejs (= 4.0.1)
   openssl (= 1.0.0)
-  phantomjs (= 2.4.0)
   parallels (>= 0)
-  phantomjs (= 2.3.0)
+  phantomjs (= 2.4.0)
   pkgconfig (= 1.0.0)
   repository (= 2.4.1)
   ruby (= 8.5.2)
