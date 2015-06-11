@@ -71,12 +71,12 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-iterm2
   specs:
-    iterm2 (1.2.4)
+    iterm2 (1.2.5)
 
 GITHUBTARBALL
   remote: boxen/puppet-java
   specs:
-    java (1.8.2)
+    java (1.8.3)
 
 GITHUBTARBALL
   remote: boxen/puppet-nginx
