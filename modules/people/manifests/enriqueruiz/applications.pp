@@ -16,6 +16,15 @@ class people::enriqueruiz::applications {
   include vmware_fusion
   include github_for_mac
   
+  # Install Atom Puppet Module for Boxen
+  include atom
+
+  # install the linter package
+  atom::package { 'linter': }
+
+  # install the monokai theme
+  atom::theme { 'monokai': }
+
   # Install the default version of both the JDK and JRE
   include java
   
