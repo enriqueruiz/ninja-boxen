@@ -60,7 +60,6 @@ github "xquartz",     "1.2.1"
 
 # Optional/custom modules. There are tons available at
 # https://github.com/boxen.
-<<<<<<< HEAD
 
 github "vagrant"
 github "iterm2"
@@ -74,9 +73,7 @@ github "github_for_mac"
 github "java"
 github "eclipse"
 # github "elasticsearch", "2.7.2"
-=======
 # github "elasticsearch", "2.8.0"
->>>>>>> upstream/master
 # github "mysql",         "2.0.1"
 # github "postgresql",  "4.0.1"
 # github "redis",       "3.1.0"
