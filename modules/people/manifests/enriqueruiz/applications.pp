@@ -14,7 +14,13 @@ class people::enriqueruiz::applications {
   include textwrangler
   include parallels  
   include vmware_fusion
-  include github_for_mac
+  
+  # This Boxen module is now deprecated. 
+  #include github_for_mac
+  
+  # The advised method for installing applications with Boxen is to now use homebrew-cask.
+  # Add the following to your manifest to install Github using brewcask:
+  package { 'github-desktop': provider => 'brewcask' }
   
   # Install the default version of both the JDK and JRE
   include java
