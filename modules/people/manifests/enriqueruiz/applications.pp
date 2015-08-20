@@ -16,11 +16,11 @@ class people::enriqueruiz::applications {
   include vmware_fusion
   
   # This Boxen module is now deprecated. 
-  #include github_for_mac
+  include github_for_mac
   
   # The advised method for installing applications with Boxen is to now use homebrew-cask.
   # Add the following to your manifest to install Github using brewcask:
-  package { 'github-desktop': provider => 'brewcask' }
+  #package { 'github-desktop': provider => 'brewcask' }
   
   # Install the default version of both the JDK and JRE
   include java
