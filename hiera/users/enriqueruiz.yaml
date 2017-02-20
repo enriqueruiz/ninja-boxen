@@ -1,0 +1,26 @@
+"nodejs::provider": "nodenv"
+"nodejs::user": "deploy"
+
+"nodejs::build::ensure": "f18b3d67756d1cb25ba6e35044f816fd67211b33"
+"nodejs::nodenv::ensure": "v0.2.0"
+
+# nodenv plugins
+"nodejs::nodenv::plugins":
+  "nodenv-vars":
+    "ensure": "ee42cd9db3f3fca2a77862ae05a410947c33ba09"
+    "source": "OiNutter/nodenv-vars"
+
+
+# Environment variables for building specific versions
+# You'll want to enable hiera's "deeper" merge strategy
+# See http://docs.puppetlabs.com/hiera/1/configuring.html#mergebehavior
+"nodejs::version::env":
+  "0.4.2":
+    "CC": "gcc"
+
+# Version aliases, commonly used to bless a specific version
+# Use the "deeper" merge strategy, as with nodejs::version::env
+"nodejs::version::alias":
+  "0.10": "0.10.36"
+  "0.12": "0.12.0"
+  "iojs-1.6": "iojs-1.6.2"

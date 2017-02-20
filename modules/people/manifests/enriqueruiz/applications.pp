@@ -46,25 +46,39 @@ class people::enriqueruiz::applications {
   #include eclipse::cpp  
 
 
-  # install any arbitrary nodejs version
-  #nodejs::version { 'v0.12.0': }
+  # Set the global default node (auto-installs it if it can)
+  class { 'nodejs::global':
+    version => '0.12'
+  }
 
-  # set the global nodejs version
-  #class { 'nodejs::global':
-  #version => 'v0.10.0'
+  # ensure a certain node version is used in a dir
+  #nodejs::local { '/path/to/some/project':
+  #  version => '0.12'
   #}
 
-  # install some npm modules
-  #nodejs::module { 'grunt-cli':
-  #node_version => 'v0.12.0'
-  #}
+  # ensure a npm module is installed for a certain node version
+  # note, you can't have duplicate resource names so you have to name like so
+  $version = "0.12"
+  npm_module { "bower for ${version}":
+    module       => 'bower',
+    version      => '~> 1.4.1',
+    node_version => $version,
+  }
 
-  #nodejs::module { 'bower':
-  #node_version => 'v0.12.0'
-  #}
+  # ensure a module is installed for all node versions
+  npm_module { 'bower for all nodes':
+    module       => 'bower',
+    version      => '~> 1.4.1',
+    node_version => '*',
+  }
 
-  #nodejs::module { 'yo':
-  #node_version => 'v0.12.0'
+  # install a node version
+  nodejs::version { '0.12.2': }
+
+  # Installing nodenv plugin
+  #nodejs::nodenv::plugin { 'nodenv-vars':
+  #  ensure => 'ee42cd9db3f3fca2a77862ae05a410947c33ba09',
+  #  source  => 'OiNutter/nodenv-vars'
   #}
   
 }
